@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Translation</title>
+</head>
+<body>
+    <h2>Translation</h2>
+    <h3>Input Image</h3><br>
+    <img id="image" src="{{image}}" alt="User Image">
+    <br>
+    <h3>Translated Text</h3><br>
+    <p id="text">{{ text }}</p>
+    <br>
+    <h3>Audio Player</h3><br>
+    <audio controls>
+        <source src="static/output.wav" type="audio/mpeg">
+    </audio>
+    <br>
+    <button onclick="location.href='{{ url_for('home_page') }}'" type="button">
+        Another Translation
+    </button>
+</body>
+</html>

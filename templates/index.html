@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+    <title>Upload new File</title>
+</head>
+<body>
+    <h1>Upload new File</h1>
+    <form action="/translate" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <select name="language">
+            <!-- Use the languages variable here -->
+            {% for lang in languages %}
+                <option value="{{ lang }}">{{ lang }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Translate">
+    </form>
+</body>
+</html>
